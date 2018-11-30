@@ -18,7 +18,8 @@ import {AuthService} from './auth.service';
 import {DemoMaterialModule} from './material-module';
 import {MatNativeDateModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import 'hammerjs';
+import {CanDeactivateGuard} from './servers/edit-server/can-deactivate-guard.service';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ReactiveFormsModule
   ],
-  providers: [ServersService, AuthGuard, AuthService],
+  providers: [ServersService, AuthGuard, AuthService, CanDeactivateGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
