@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+// import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
@@ -18,8 +18,8 @@ import {AuthService} from './auth.service';
 import {DemoMaterialModule} from './material-module';
 import {MatNativeDateModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import 'hammerjs';
 import {CanDeactivateGuard} from './servers/edit-server/can-deactivate-guard.service';
+import 'hammerjs';
 
 
 @NgModule({
@@ -47,4 +47,4 @@ import {CanDeactivateGuard} from './servers/edit-server/can-deactivate-guard.ser
 })
 export class AppModule { }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+// platformBrowserDynamic().bootstrapModule(AppModule);
